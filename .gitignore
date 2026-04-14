@@ -2,3 +2,7 @@
 .venv
 # cache vai ficar também fora do repositório
 __pycache__
+# arquivos de configuração do editor
+.vscode 
+# arquivos de configuração do sistema operacional
+.DS_Store

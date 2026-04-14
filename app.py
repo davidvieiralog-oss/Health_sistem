@@ -333,7 +333,7 @@ with tab_map:
                 index=0,
                 key="map_tiles",
             )
-
+        # contexto rápido da camada (CRS, tipos geométricos, colunas) para ajudar o diagnóstico
         st.markdown("---")
         m = mapmod.build_folium_map(
             gdf=gdf,
@@ -342,7 +342,7 @@ with tab_map:
             tiles=tiles,
         )
         st_folium(m, height=650, width=None, returned_objects=[])
-
+        # contexto rápido da camada (CRS, tipos geométricos, colunas) para ajudar o diagnóstico
         with st.expander("🔎 Diagnóstico da camada", expanded=False):
             st.write("CRS:", str(gdf.crs))
             st.write("Geom types:", gdf.geom_type.value_counts().to_dict())
