@@ -1,0 +1,4 @@
+# venv do meu projeto
+.venv
+# cache vai ficar também fora do repositório
+__pycache__
