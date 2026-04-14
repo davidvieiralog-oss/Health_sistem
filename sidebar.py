@@ -73,7 +73,7 @@ def render_sidebar(df: Optional[pd.DataFrame], available_cols: Optional[List[str
         st.markdown("#### Opções")
         sort_x = st.checkbox("Ordenar pelo eixo X", value=True, key="sb_sort_x")
         parse_dates = st.checkbox("Tentar interpretar X como data", value=True, key="sb_parse_dates")
-
+        #adicção de opção para mostrar ou não a tabela e controlar o número de linhas exibidas
         st.markdown("---")
         st.markdown("### Tabela")
         show_table = st.checkbox("Mostrar prévia da tabela", value=True, key="sb_show_table")
